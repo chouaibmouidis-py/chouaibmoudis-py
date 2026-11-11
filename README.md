@@ -1,61 +1,63 @@
 # Hi, I'm Chouaib 👋
+### Aspiring Data Engineer | Python • SQL • DuckDB • dbt • Databricks
 
-I'm a technical customer support adviser transitioning into **data engineering** through self-study and practical projects.
+I'm a **Technical Support Specialist** transitioning into **Data Engineering** through rigorous self-study and production-grade projects.
 
-My support experience has taught me to investigate problems, explain technical issues clearly, and stay focused on what people need. I'm bringing that approach to building reliable data pipelines.
+My support background has trained me to investigate edge cases, diagnose complex bugs, communicate technical issues clearly, and keep user needs central. I bring that same reliability-first mindset to building resilient data pipelines.
+
+---
 
 ## 🛠️ What I'm building
 
-### [Motorsport Data Pipeline](https://github.com/chouaibmouidis-py/Moto_Sport_BMW_Pipeline)
+### 🏎️ [Motorsport Data Pipeline](https://github.com/chouaibmouidis-py/Moto_Sport_BMW_Pipeline)
+A standalone Python and DuckDB ELT pipeline turning official IMSA race reports into traceable, tested analytical models, focusing on BMW entries.
 
-A personal Python and DuckDB project that turns official IMSA race reports into traceable, tested analytical data, with a focus on BMW participation.
+- **Data Lineage & Integrity:** Ingest raw JSON reports, compute SHA-256 byte fingerprints, and enforce Bronze-to-Silver data contracts.
+- **Scale:** Processes pit-stop reports containing **1,791 stops** (Daytona 24h, Road America, Long Beach) and official classification reports.
+- **Relational Normalization:** Links sessions, cars, drivers, and stops with custom handling for edge cases (clock-time overflow across midnight).
+- **Data Quality & Reconciliation:** Automated SQL checks for foreign-key consistency, missing values, and duration cross-checks (sum of stops vs. official race totals).
+- **Crash-Safety:** Publishes outputs into immutable run directories and performs **atomic pointer swaps** (`current.json`) only upon successful full validation.
 
-- Ingest JSON reports and verify local files with SHA-256 checks.
-- Preserve source content in a Bronze Parquet layer, then clean and type data in Silver.
-- Process three pit-stop reports containing **1,791 stops**, plus an official classification report with **48 participants**.
-- Link cars, drivers, and stops while preserving document and version provenance.
-- Check keys, missing values, durations, and saved content with SQL and automated Python tests.
-- Publish outputs into separate run directories and update the current reference only after the required files are available.
+*Independent learning project, not affiliated with BMW or IMSA.*
 
-I'm currently improving the code structure and preparing comparisons between classification results and detailed pit-stop reports.
+### 📊 [GH Archive Analytics](https://github.com/chouaibmouidis-py/Gh_Archive_Analytics)
+A Python, DuckDB, and dbt project analyzing GitHub activity at scale. Explores partitioned Parquet storage, incremental models, deduplication strategies, and automated data testing.
 
-*An independent learning project, with no affiliation with BMW or IMSA.*
+### 🏢 [Job Postings Analytics](https://github.com/chouaibmouidis-py/DBT_project)
+An end-to-end analytics engineering project implemented across DuckDB and **Databricks**. Demonstrates dimensional modeling (Kimball), incremental loading, **SCD Type 2 snapshots**, and orchestration.
 
-### [GH Archive Analytics](https://github.com/chouaibmouidis-py/Gh_Archive_Analytics)
+---
 
-A Python, DuckDB, and dbt project for analyzing GitHub activity. It explores partitioned Parquet storage, incremental transformations, deduplication, analytical models, and data quality tests.
+## 🌱 Technical Toolkit
 
-### [Job Postings Analytics](https://github.com/chouaibmouidis-py/DBT_project)
+- **Data Engineering:** Medallion Architecture (Raw/Bronze/Silver), Data Lineage, Parquet, Atomic Writes, Dimensional Modeling, SCD Type 2.
+- **Languages:** Python (Unit Testing, Mocks, CLI, JSON processing), SQL (Advanced CTEs, Window Functions, Set Differences, Quality Checks).
+- **Tools & Ecosystem:** DuckDB, dbt, Databricks, uv, Git, GitHub Actions.
+- **Exploring:** Apache Iceberg, BigQuery, and Google Cloud Platform.
 
-A project developed across DuckDB and Databricks versions to practise dbt transformations, dimensional modeling, incremental loading, SCD Type 2 snapshots, testing, and orchestration.
+---
 
-## 🌱 What I'm practising
+## 🎓 Learning Milestones
 
-- **Python:** JSON and file processing, reusable functions, exception handling, unit tests, and mocks.
-- **SQL:** joins, CTEs, window functions, aggregations, NULL handling, and data quality checks.
-- **Data engineering:** ingestion, Raw/Bronze/Silver layers, Parquet, provenance, dimensional modeling, and controlled publication.
-- **Tools used in my projects:** DuckDB, dbt, Databricks, Git, GitHub Actions, and uv.
+- **Certifications (freeCodeCamp):**
+  - Scientific Computing with Python
+  - Data Analysis with Python
+  - Relational Database
+- **Methodology:** I use official documentation and AI-assisted coaching as a sparring partner (code review and architectural challenge), then practice writing, debugging, testing, and defending every line of code myself.
+- **Languages:** French (Native/Main working language), English (Working proficiency in technical reading and writing).
 
-I'm also exploring Apache Iceberg and engine compatibility through local experiments, while developing my knowledge of BigQuery and Google Cloud.
+---
 
-## 🎓 Learning milestones
+## 🎯 Next Steps
 
-Completed three freeCodeCamp certifications:
+My goal is to join an engineering team as a **Junior Data Engineer**, where I can contribute to reliable data infrastructure, learn from code reviews, and deliver value on real business problems.
 
-- Scientific Computing with Python
-- Data Analysis with Python
-- Relational Database
+Long-term, I am working toward the **Google Cloud Professional Data Engineer** certification and contributing to open-source data tooling.
 
-I continue to work on technical English through documentation, project explanations, and short writing exercises. French is my main working language.
-
-I use documentation and AI-assisted coaching to support my learning, then practise writing, testing, debugging, and explaining the code myself.
-
-## 🎯 Where I'm heading
-
-My next goal is a **junior data engineering role**, where I can contribute, learn from code reviews, and develop experience with real business requirements.
-
-Longer term, I aim to prepare for the Google Cloud Professional Data Engineer certification and contribute to open-source data projects.
+---
 
 ## 📫 Let's connect
 
-You can find my projects and contact me through [my GitHub profile](https://github.com/chouaibmouidis-py).
+- **LinkedIn:** [Chouaib Mouid](https://www.linkedin.com/in/chouaib-mouid-200893438)
+- **Email:** [chouaibmouidis@gmail.com](mailto:chouaibmouidis@gmail.com)
+- **GitHub:** [github.com/chouaibmouidis-py](https://github.com/chouaibmouidis-py)
